@@ -10,11 +10,10 @@ function loopAnimacion() {
 const btnAnimacion = document.getElementById('btnAnimacion');
 
 btnAnimacion.addEventListener('click', () => {
-    // Alterna el estado entre pausado y reproduciendo
     Estado.animando = !Estado.animando;
     
     btnAnimacion.classList.toggle('pausado', Estado.animando);
-    btnAnimacion.innerHTML = Estado.animando ? '⏸ Pausar Animación' : '▶ Iniciar Animación';
+    btnAnimacion.innerHTML = Estado.animando ? 'Pausar' : 'Iniciar';
 });
 
 function aplicarMetaGrados() {
