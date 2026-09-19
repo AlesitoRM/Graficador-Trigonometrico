@@ -13,7 +13,7 @@ btnAnimacion.addEventListener('click', () => {
     Estado.animando = !Estado.animando;
     
     btnAnimacion.classList.toggle('pausado', Estado.animando);
-    btnAnimacion.innerHTML = Estado.animando ? 'Pausar' : 'Iniciar';
+    btnAnimacion.innerHTML = Estado.animando ? 'Pausar Animación' : 'Iniciar Animación';
 });
 
 function aplicarMetaGrados() {
