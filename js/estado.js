@@ -1,4 +1,3 @@
-// Memoria central de la aplicación
 const Estado = {
     animando: false, 
     anguloActual: 0, 

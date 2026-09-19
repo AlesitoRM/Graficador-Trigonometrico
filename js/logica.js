@@ -1,4 +1,3 @@
-// Procesa las matemáticas y actualiza los datos
 const Logica = {
     avanzarTiempo: function () {
         if (Estado.animando) {
@@ -55,4 +54,4 @@ const Logica = {
             Renderizador.dibujarFrame();
         }
     }
-};
+};

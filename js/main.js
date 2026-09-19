@@ -1,4 +1,3 @@
-// Bucle principal de animación a 60fps
 function loopAnimacion() {
     Logica.avanzarTiempo();
     Renderizador.dibujarFrame();
@@ -57,5 +56,4 @@ document.getElementById('inputDesfase').addEventListener('input', (event) => {
 // Inicializamos la aplicación dibujando el primer cuadro (frame) en estado de reposo
 Renderizador.dibujarFrame();
 
-// Arrancamos el motor de JavaScript
 requestAnimationFrame(loopAnimacion);

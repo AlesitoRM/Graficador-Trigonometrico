@@ -1,4 +1,3 @@
-// Se encarga exclusivamente de pintar en pantalla
 const Renderizador = {
     ctxCirculo: document.getElementById('canvasCirculo').getContext('2d'),
     ctxOnda: document.getElementById('canvasOnda').getContext('2d'),
@@ -163,20 +162,20 @@ const Renderizador = {
         const xCirc = Math.cos(angEfectivo);
         const yCirc = Math.sin(angEfectivo);
 
-        let color = '#00F0FF'; // Cian Neón para Seno
-        let proyeccionColor = '#F43F5E'; // Rosa Neón para proyección vertical
+        let color = '#00F0FF'; 
+        let proyeccionColor = '#F43F5E';
         
         if (Estado.funcion === 'Coseno') {
-            color = '#10B981'; // Esmeralda Neón
+            color = '#10B981'; 
             proyeccionColor = '#10B981';
         }
         if (Estado.funcion === 'Tangente') {
-            color = '#A855F7'; // Violeta Neón
+            color = '#A855F7';
             proyeccionColor = '#A855F7';
         }
         if (Estado.funcion === 'MayorEntero') {
-            color = '#EAB308'; // Ámbar Neón para Mayor Entero
-            proyeccionColor = '#F97316'; // Naranja
+            color = '#EAB308';
+            proyeccionColor = '#F97316';
         }
 
         // Dibuja el radio vector en el círculo
